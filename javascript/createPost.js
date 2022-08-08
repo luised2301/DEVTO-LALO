@@ -20,21 +20,20 @@ var input = document.querySelector('input[name=tags]'),
 tagify = new Tagify( input );
 
 const otherPost = {
-    postAuthor: "El Admin",
     postBody: "",
     postChangeDate: "",
     postCreationDate: "",
     postImage: "",
-    postLikesCount: 10,
-    postSavedCount: 20,
+    postLikesCount: 0,
+    postSavedCount: 0,
     postTags: [],
     postTimeToRead: "",
     postTitle: "",
-    postUnicornCount: 30,
+    postUnicornCount: 0,
 }
 
 let urlPostImg = document.querySelector('#url_post_img')
-let saveImgUrl = document.querySelector('#save_img_url')
+let postAuthorinput = document.querySelector('#post_author')
 let postTitle = document.querySelector('#input_post_title')
 let postBody = document.querySelector('#editor')
 let publishBtn = document.querySelector("#save_btn")
@@ -42,11 +41,14 @@ let publishBtn = document.querySelector("#save_btn")
 
 
 
-saveImgUrl.addEventListener('click', () => {
+urlPostImg.addEventListener('input', () => {
+  console.log(urlPostImg.value)
   otherPost.postImage = urlPostImg.value
 })
 
 publishBtn.addEventListener('click', () => {
+
+otherPost.postAuthor = postAuthorinput.value
   otherPost.postImage = urlPostImg.value
   otherPost.postTitle = postTitle.value
   otherPost.postBody = quill.root.innerHTML;
