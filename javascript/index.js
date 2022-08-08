@@ -59,7 +59,8 @@ const insertPost = (posts, arrKeys, userImg) => {
                 </div>
                 <div class="flex-grow-1 ms-3 user-story-text-p1 lh-1">
                     <span class="story-username-p1"><small>${posts[0].postAuthor}</small></span><br>
-                    <span class="story-postdate-p1"><small>${posts[0].postCreationDate}</small></span>
+                    <span class="story-postdate-p1"><small>${posts[0].postCreationDate.substring(0, 10)} at </small></span>
+                    <span class="story-postdate-p1">${posts[0].postCreationDate.split("T")[1].substring(0, 5)}</small></span>
                 </div>
             </div>
         </li>
@@ -113,7 +114,8 @@ const insertPost = (posts, arrKeys, userImg) => {
         </div>
         <div class="flex-grow-1 ms-3 user-story-text-p1 lh-1">
         <span class="story-username-p1"><small>${posts[post].postAuthor}</small></span><br>
-        <span class="story-postdate-p1"><small>${posts[post].postCreationDate}</small></span>
+        <span class="story-postdate-p1"><small>${posts[0].postCreationDate.substring(0, 10)} at </small></span>
+        <span class="story-postdate-p1">${posts[0].postCreationDate.split("T")[1].substring(0, 5)}</small></span>
         </div>
         </div>
         </li>
