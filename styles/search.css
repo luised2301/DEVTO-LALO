@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Segoe UI Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Regular"), url("Segoe UI.woff") format("woff");
+}
+@font-face {
+  font-family: "Segoe UI Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Italic"), url("Segoe UI Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Segoe UI Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Bold"), url("Segoe UI Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Segoe UI Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Bold Italic"), url("Segoe UI Bold Italic.woff") format("woff");
+}
+#navbar {
+  background-color: rgb(255, 255, 255);
+  height: 56px;
+  color: rgb(245, 245, 245);
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+#card-resume {
+  border-color: rgb(229, 229, 229);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.card-title {
+  font-family: "Segoe UI Bold";
+  font-size: x-large;
+}/*# sourceMappingURL=search.css.map */

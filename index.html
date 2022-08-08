@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="https://res.cloudinary.com/practicaldev/image/fetch/s--E8ak4Hr1--/c_limit,f_auto,fl_progressive,q_auto,w_32/https://dev-to.s3.us-east-2.amazonaws.com/favicon.ico">
+    <link rel="stylesheet" href="/styles/index.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="navbar">
+                <div class="container d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <button id="offcanvas_btn" class="btn d-inline-block d-md-none navbar-toggler burguer-button"
+                            type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
+                            <span class="navbar-toggler-icon nav-span"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" alt="logo"><img src="/assets/icons/logo.png" alt=""></a>
+
+
+                        <div class="collapse navbar-collapse d-md-flex" id="navbarSupportedContent">
+                            <div class="input-wrapper">
+                                <input type="search" class="input input-search" id="find-input" placeholder="Search...">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-nav d-flex align-items-center">
+                        <div class="nav-button">
+                            <button type="button" class="btn btn-outline-primary button-create-post">Create
+                                post</button>
+                        </div>
+                        <a href="#"><img src="/assets/icons/notifications.png" alt="" srcset="" class="p1_icon"></a>
+                        <div class="dropdown" id="dropdown-user">
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Inicio de offcanvas -->
+                <div class="offcanvas offcanvas-start custom-nav-off" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Dev Community</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <div class="container-home">
+                                <div class="list-group">
+
+                                    <ul class="list-home">
+                                        <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                    src="/assets/icons/home.png" alt="" srcset=""> Home</a></li>
+                                        <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                    src="/assets/icons/reading_list.png">
+                                                ReadingList</li>
+                                        <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                    src="/assets/icons/listing.png">
+                                                Listings</a> </li>
+                                        <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                    src="/assets/icons/podcasts.png">
+                                                Podcasts</a></li>
+                                        <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                    src="/assets/icons/videos.png">
+                                                Videos</a></li>
+                                        <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                    src="/assets/icons/tags.png">
+                                                Tags</a></li>
+                                        <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                    src="/assets/icons/faq.png">
+                                                FAQ</a></li>
+                                        <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                    src="/assets/icons/shop.png">
+                                                Forem Shop</a></li>
+                                        <li> <a href="#" style="text-decoration:none" class="bi">
+                                                <img src="/assets/icons/sponsors.png">Sponsors
+                                            </a></li>
+                                        <li><a href="#" style="text-decoration:none" class="bi"><img
+                                                    src="/assets/icons/about_new.png">
+                                                About</a></li>
+                                        <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                    src="/assets/icons/contact.png">
+                                                Contact</a></li>
+                                        <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                    src="/assets/icons/guides_new.png">Guides</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="container-others">
+                                <ul class="list-others">
+                                    <li>
+                                        <h5>Other</h5>
+                                    </li>
+                                    <li><a href="#" class="bi" style="text-decoration:none"><img
+                                                src="/assets/icons/thumb_up.png"></img>Code ofConduct</a></li>
+                                    <li><a href="#" class="bi" style="text-decoration:none"><img
+                                                src="/assets/icons/policy.png"></img>Privacy Policy</a></li>
+                                    <li><a href="#" class="bi" style="text-decoration:none"><img
+                                                src="/assets/icons/eyes.png"></img>Terms
+                                            of Use</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="container-media">
+                                <ul class="menu-media">
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-github"></i></a>
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-chat-left-text"></i></a>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Start of Left Aside -->
+        <div class="main-wrapper">
+            <div class="container col-12">
+                <div class="row">
+                    <aside class="aside-izq col-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3" id="aside">
+                        <!--list navigation-->
+                        <div class="container-home">
+                            <div class="list-group">
+
+                                <ul class="list-home">
+                                    <li> <a href="#" class="bi"><img src="/assets/icons/home.png" alt="" srcset="">
+                                            Home</a>
+                                    </li>
+                                    <li> <a href="#" class="bi"><img src="/assets/icons/reading_list.png">
+                                            ReadingList</li>
+                                    <li> <a href="#" class="bi"><img src="/assets/icons/listing.png">
+                                            Listings</a> </li>
+                                    <li> <a href="#" class="bi"><img src="/assets/icons/podcasts.png">
+                                            Podcasts</a></li>
+                                    <li> <a href="#" class="bi"><img src="/assets/icons/videos.png">
+                                            Videos</a></li>
+                                    <li> <a href="#" class="bi"><img src="/assets/icons/tags.png">
+                                            Tags</a></li>
+                                    <li> <a href="#" class="bi"><img src="/assets/icons/faq.png">
+                                            FAQ</a></li>
+                                    <li> <a href="#" class="bi"><img src="/assets/icons/shop.png">
+                                            Forem Shop</a></li>
+                                    <li> <a href="#" class="bi">
+                                            <img src="/assets/icons/sponsors.png">Sponsors
+                                        </a></li>
+                                    <li><a href="#" class="bi"><img src="/assets/icons/about_new.png">
+                                            About</a></li>
+                                    <li> <a href="#" class="bi"><img src="/assets/icons/contact.png">
+                                            Contact</a></li>
+                                    <li> <a href="#" class="bi"><img src="/assets/icons/guides_new.png">Guides</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="container-others">
+                            <ul class="list-others">
+                                <li>
+                                    <h5>Other</h5>
+                                </li>
+                                <li><a href="#" class="bi" style="text-decoration:none"><img
+                                            src="/assets/icons/policy.png"></img>Privacy
+                                        Policy</a></li>
+                                <li><a href="#" class="bi" style="text-decoration:none"><img
+                                            src="/assets/icons/eyes.png"></img>Terms
+                                        of Use</a></li>
+                            </ul>
+                        </div>
+
+
+
+                        <!--list social media-->
+                        <div class="container-media">
+                            <ul class="menu-media">
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-github"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-chat-left-text"></i></a>
+                            </ul>
+                        </div>
+                        <!--scroll-->
+                        <div class="container-tags">
+                            <ul class="list-tags">
+                                <li>
+                                    <h5>My Tags</h5>
+                                </li>
+                                <li> <a href="#" style="text-decoration:none" class="bi">#devops</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#opensource</a> </li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#career</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#android</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#java</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#testing</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#linux</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#angular</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#laravel</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#git</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#dotnet</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#web3</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#ubuntu</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#gamedev</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#vscode</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#swift</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#npm</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#bash</a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi">#scala</a></li>
+                            </ul>
+
+                        </div>
+                    </aside>
+
+
+
+                    <!-- End of Left Aside -->
+                    <!--Marco's section-->
+                    <!--Main navigation section -->
+                    <section class="container p1 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 section_main_cards">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-tabs" role="presentation">
+                                <a class="nav-link" href="#relevant-content" id="pills-relevant-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-relevant" type="button" role="tab"
+                                    aria-controls="pills-relevant" aria-selected="true" role="button">Relevant</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-latest-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-latest" type="button" role="tab" aria-controls="pills-latest"
+                                    aria-selected="false">Latest</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-top-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-top" type="button" role="tab" aria-controls="pills-top"
+                                    aria-selected="false">Top</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-relevant" role="tabpanel"
+                                aria-labelledby="pills-relevant-tab"></div>
+                            <div class="tab-pane fade" id="pills-latest" role="tabpanel"
+                                aria-labelledby="pills-latest-tab">
+                            </div>
+                            <div class="tab-pane fade" id="pills-top" role="tabpanel" aria-labelledby="pills-top-tab">
+                            </div>
+                        </div>
+
+
+                        <!--User posts section-->
+                        <div class="row main_section">
+                            <div class="container col-12">
+                                <div class="col-12 card-p1-global y-2" id="main_posts_cards">
+
+
+                                </div>
+
+                                <div class="col-12 card-p1-global my-2" id="main_posts_cards2">
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+                    </section>
+                    <!--Right aside section-->
+                    <aside class="container r-p1 col-lg-3 col-xl-3 col-xxl-3 aside-der">
+                        <div class="container card r-p1-card">
+                            <img src="/assets/images/Aside-der.jfif" alt="" srcset="">
+                            <a class="link-aside" href="#">Forem for Android is here!</a>
+                        </div>
+                        <div class="card r-p1-card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item r-p1-card-text-heading">Listings</li>
+                                <li class="list-group-item r-p1-card-text">Get paid to talk about using Fauna</li>
+                                <li class="list-group-item r-p1-card-text">Frontend developer ready for some summer
+                                    works
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card r-p1-card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item r-p1-card-text-heading">#help</li>
+                                <li class="list-group-item r-p1-card-text">Azure/Dev/AI Journey and beyond!</li>
+                            </ul>
+                        </div>
+                        <div class="card r-p1-card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item r-p1-card-text-heading">#discuss</li>
+                                <li class="list-group-item r-p1-card-text">Q: As a #CodeNewbie, what are your learning
+                                    goals
+                                    for the
+                                    next
+                                    #30days?
+                                </li>
+                                <li class="list-group-item r-p1-card-text">What's the difference between a library and a
+                                    framework
+                                </li>
+                                <li class="list-group-item r-p1-card-text">Composition api or Options api?
+                                </li>
+                                <li class="list-group-item r-p1-card-text">What were your mistakes in your career path?
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--end of Marco-->
+
+    </main>
+    <footer class=" d-flex justify-content-center p-5 flex-column">
+        <div class=" justify-content-center py-3 text-center">
+            <a href="">
+                DEV Communuty
+            </a>
+            <span>
+                -- A constructive and inclusive social netwoek for software developers. With you every sted of your
+                journey.
+            </span>
+        </div>
+        <div class=" justify-content-center py-1 text-center">
+            <span>
+                Biult on&nbsp;
+            </span>
+            <a href="">
+                Forem
+            </a>
+            <span>
+                -- the
+                <a href="">
+                    open source
+                </a>
+                software that powers
+                <a href="">
+                    DEV
+                </a>
+                and other inclusive communities.
+            </span>
+        </div>
+        <div class=" justify-content-center py-1 text-center">
+            <span>
+                Made with love and&nbsp;
+            </span>
+            <a href="">
+                Ruby on Rails.
+            </a>
+            <span>
+                &nbsp;DEV Community© 2016 - 2022.
+            </span>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a href="#"><img src="./assets/images/hojitas.png" alt="" id="leaves"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+    </script>
+    <script src="/javascript/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+header {
+  height: 6%;
+  margin-top: 0.5%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-image {
+  width: 50px;
+  margin: auto;
+}
+
+#input_post_title {
+  border: none;
+  border-radius: 1px;
+  background: transparent;
+  font-weight: bold;
+  font-size: large;
+  font-size: 35px;
+}
+
+#editor {
+  background-color: white;
+}/*# sourceMappingURL=createPost.css.map */

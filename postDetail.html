@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/postDetailG.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar fixed-top">
+            <div class="container d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                    <button id="offcanvas_btn" class="btn d-inline-block d-md-none navbar-toggler burguer-button"
+                        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample">
+                        <span class="navbar-toggler-icon nav-span"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" alt="logo"><img src="/assets/icons/logo.png" alt=""></a>
+
+
+                    <div class="collapse navbar-collapse d-md-flex" id="navbarSupportedContent">
+                        <div class="input-wrapper">
+                            <input type="search" class="input input-search" id="find-input" placeholder="Search...">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-nav d-flex align-items-center">
+                    <div class="nav-button">
+                        <button type="button" class="btn btn-outline-primary button-create-post">Create
+                            post</button>
+                    </div>
+                    <a href="#"><img src="/assets/icons/notifications.png" alt="" srcset="" class="p1_icon"></a>
+                    <div class="dropdown" id="dropdown-user">
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- Inicio de offcanvas -->
+            <div class="offcanvas offcanvas-start custom-nav-off" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Dev Community</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <div class="container-home">
+                            <div class="list-group">
+
+                                <ul class="list-home">
+                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                src="/assets/icons/home.png" alt="" srcset=""> Home</a></li>
+                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                src="/assets/icons/reading_list.png">
+                                            ReadingList</li>
+                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                src="/assets/icons/listing.png">
+                                            Listings</a> </li>
+                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                src="/assets/icons/podcasts.png">
+                                            Podcasts</a></li>
+                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                src="/assets/icons/videos.png">
+                                            Videos</a></li>
+                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                src="/assets/icons/tags.png">
+                                            Tags</a></li>
+                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                src="/assets/icons/faq.png">
+                                            FAQ</a></li>
+                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                src="/assets/icons/shop.png">
+                                            Forem Shop</a></li>
+                                    <li> <a href="#" style="text-decoration:none" class="bi">
+                                            <img src="/assets/icons/sponsors.png">Sponsors
+                                        </a></li>
+                                    <li><a href="#" style="text-decoration:none" class="bi"><img
+                                                src="/assets/icons/about_new.png">
+                                            About</a></li>
+                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                src="/assets/icons/contact.png">
+                                            Contact</a></li>
+                                    <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                                src="/assets/icons/guides_new.png">Guides</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="container-others">
+                            <ul class="list-others">
+                                <li>
+                                    <h5>Other</h5>
+                                </li>
+                                <li><a href="#" class="bi" style="text-decoration:none"><img
+                                            src="/assets/icons/thumb_up.png"></img>Code ofConduct</a></li>
+                                <li><a href="#" class="bi" style="text-decoration:none"><img
+                                            src="/assets/icons/policy.png"></img>Privacy Policy</a></li>
+                                <li><a href="#" class="bi" style="text-decoration:none"><img
+                                            src="/assets/icons/eyes.png"></img>Terms
+                                        of Use</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="container-media">
+                            <ul class="menu-media">
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-github"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-chat-left-text"></i></a>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> 
+    <main class="container ">
+
+        <div class="col-12 flex-column-reverse d-flex flex-lg-row lg-row-12">
+            <div class="d-flex col-12 col-lg-1 rounded-top sticky-bottom justify-content-center" id="left-aside">
+
+            </div>
+            <section class="col-12 d-flex flex-column col-lg-12 flex-lg-row justify-content-center pt-5">
+                <div class="col-12 col-lg-7 d-flex justify-content-center flex-column" id="post-holder">
+
+                </div>
+                <div class="d-flex col-12 col-lg-3 flex-lg-row">
+                    <aside class="d-flex col-12 flex-column lg-mx-3" id="right-aside-container">
+                        <div class="sticky-property-right-aside " id="user-holder">
+                        <div class="card my-3  " id="right-aside-bottom-card">
+                            <div class="card-header py-3 fs-5 fw-bold">
+                                More From  
+                                <a class="text-decoration-none fw-bold fs-5" href="#Strapi">
+                                    Strapi
+                                </a>
+                            </div>
+                            <ul class="list-group list-group-flush fs-5">
+                                <li class="list-group-item py-3" >
+                                    <a  class="text-decoration-none fs-6"  id="right-aside-card-list"href="">
+                                        <div>
+                                            CSS Logos: GitHub logo
+                                        </div>
+                                        <div>
+                                            #CSS #beginners #webdev
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item py-3" >
+                                    <a class="text-decoration-none fs-6"  id="right-aside-card-list" href="">
+                                        <div>
+                                            10 Algorithms Every Developer Should Learn
+                                        </div>
+                                        <div>
+                                            #CSS #beginners #webdev
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-group-item py-3" >
+                                    <a class="text-decoration-none fs-6 " id="right-aside-card-list" href="">
+                                        <div>
+                                            Pathfinding with Javascript: The A* Algorithm
+                                        </div>
+                                        <div>
+                                            #CSS #beginners #webdev
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    
+
+                </aside>
+            </section>
+        </div>
+
+    </main>
+
+
+    <footer class=" d-flex justify-content-center p-5 flex-column">
+        <div class=" justify-content-center py-3 text-center">
+            <a href="">
+                DEV Community
+            </a>
+            <span>
+                -- A constructive and inclusive social network for software developers. With you every step of your journey. 
+            </span> 
+        </div>
+        <div class=" justify-content-center py-1 text-center">
+            <span>
+                Built on&nbsp;
+            </span>
+            <a href="">
+                Form
+            </a>
+            <span>
+                -- the 
+                <a href="">
+                    open source
+                </a>
+                    software that powers
+                <a href="">
+                    DEV
+                </a> 
+                and other inclusive communities.
+            </span> 
+        </div>
+        <div class=" justify-content-center py-1 text-center">
+            <span>
+                Made with love and&nbsp;
+            </span> 
+            <a href="">
+                Ruby on Rails.
+            </a>
+            <span>
+                &nbsp;DEV Community© 2016 - 2022.
+            </span> 
+        </div>
+        <div class="d-flex justify-content-center" >
+            <a href="#"><img src="./assets/images/hojitas.png" alt="" id="leaves"></a>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="./javascript/postDetailG.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>

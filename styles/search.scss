@@ -1,0 +1,57 @@
+
+$text-hover-color: #404085; //text color on hoover
+$base-color-dark: rgb(229, 229, 229); //base color dark tones (used for the background)
+$base-color-mid: rgb(245, 245, 245); //base color mid tones (used for midtones)
+$base-color-light: rgb(255, 255, 255); //base color light tones (used for light zones)
+$btn-secondary-color-hover: #bdbdbd;// secondary button color on hoover
+$btn-secondary-color:#d6d6d7; // secondary button color 
+
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('Segoe UI.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('Segoe UI Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('Segoe UI Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('Segoe UI Bold Italic.woff') format('woff');
+}
+
+
+#navbar{
+    background-color: $base-color-light;
+    height: 56px;
+    color: $base-color-mid
+}
+
+body{
+    background-color: $base-color-mid;
+}
+
+#card-resume{
+    border-color: $base-color-dark;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.card-title{
+    font-family: 'Segoe UI Bold';
+    font-size: x-large;
+    
+}
+
