@@ -65,7 +65,8 @@ let postsMainCards = document.querySelector('#card_holder');
             </div>
             <div class="ps-2">
                 <span>${posts[post].postAuthor}</span><br>
-                <span>${posts[post].postCreationDate}</span>
+                <span class="story-postdate-p1"><small>${posts[post].postCreationDate.substring(0, 10)} at </small></span>
+                <span class="story-postdate-p1"><small>${posts[post].postCreationDate.split("T")[1].substring(0, 5)}</small></span>
             </div>
     
         </div>
@@ -134,7 +135,8 @@ let postsMainCards = document.querySelector('#card_holder');
             </div>
             <div class="ps-2">
                 <span>${posts[post].postAuthor}</span><br>
-                <span>${posts[post].postCreationDate}</span>
+                <span class="story-postdate-p1"><small>${posts[post].postCreationDate.substring(0, 10)} at </small></span>
+                <span class="story-postdate-p1"><small>${posts[post].postCreationDate.split("T")[1].substring(0, 5)}</small></span>
             </div>
     
         </div>
@@ -194,7 +196,8 @@ let postsMainCards = document.querySelector('#card_holder');
             </div>
             <div class="ps-2">
                 <span>${posts[post].postAuthor}</span><br>
-                <span>${posts[post].postCreationDate}</span>
+                <span class="story-postdate-p1"><small>${posts[post].postCreationDate.substring(0, 10)} at </small></span>
+                <span class="story-postdate-p1"><small>${posts[post].postCreationDate.split("T")[1].substring(0, 5)}</small></span>
             </div>
     
         </div>
