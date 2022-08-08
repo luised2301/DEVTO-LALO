@@ -11,15 +11,133 @@
     <link rel="stylesheet" href="/styles/search.css">
   </head>
   <body>
-    <nav class="text-center" id="navbar">
-        <h1 style="color:lightgray;">AQUI VA EL NAVBAR HECHO </h1>
+    <nav class="navbar">
+        <div class="container d-flex align-items-center">
+            <div class="d-flex align-items-center">
+                <button id="offcanvas_btn" class="btn d-inline-block d-md-none navbar-toggler burguer-button"
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon nav-span"></span>
+                </button>
+                <a class="navbar-brand" href="#" alt="logo"><img src="/assets/icons/logo.png" alt=""></a>
 
+
+                <div class="collapse navbar-collapse d-md-flex" id="navbarSupportedContent">
+                    <div class="input-wrapper">
+                        <input type="search" class="input input-search" id="find-input" placeholder="Search...">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="right-nav d-flex align-items-center">
+                <div class="nav-button">
+                    <button type="button" class="btn btn-outline-primary button-create-post">Create
+                        post</button>
+                </div>
+                <a href="#"><img src="/assets/icons/notifications.png" alt="" srcset="" class="p1_icon"></a>
+                <div class="dropdown" id="dropdown-user">
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Inicio de offcanvas -->
+        <div class="offcanvas offcanvas-start custom-nav-off" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Dev Community</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <div class="container-home">
+                        <div class="list-group">
+
+                            <ul class="list-home">
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/assets/icons/home.png" alt="" srcset=""> Home</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/assets/icons/reading_list.png">
+                                        ReadingList</li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/assets/icons/listing.png">
+                                        Listings</a> </li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/assets/icons/podcasts.png">
+                                        Podcasts</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/assets/icons/videos.png">
+                                        Videos</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/assets/icons/tags.png">
+                                        Tags</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/assets/icons/faq.png">
+                                        FAQ</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/assets/icons/shop.png">
+                                        Forem Shop</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi">
+                                        <img src="/assets/icons/sponsors.png">Sponsors
+                                    </a></li>
+                                <li><a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/assets/icons/about_new.png">
+                                        About</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/assets/icons/contact.png">
+                                        Contact</a></li>
+                                <li> <a href="#" style="text-decoration:none" class="bi"><img
+                                            src="/assets/icons/guides_new.png">Guides</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-others">
+                        <ul class="list-others">
+                            <li>
+                                <h5>Other</h5>
+                            </li>
+                            <li><a href="#" class="bi" style="text-decoration:none"><img
+                                        src="/assets/icons/thumb_up.png"></img>Code ofConduct</a></li>
+                            <li><a href="#" class="bi" style="text-decoration:none"><img
+                                        src="/assets/icons/policy.png"></img>Privacy Policy</a></li>
+                            <li><a href="#" class="bi" style="text-decoration:none"><img
+                                        src="/assets/icons/eyes.png"></img>Terms
+                                    of Use</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="container-media">
+                        <ul class="menu-media">
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-github"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-chat-left-text"></i></a>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </nav>
     <main>
         <div class="container">
-            <div class="row d-flex py-2">
-                <div class="col-12  d-md-none col-md-6">
-                    <input type="text">>
+            <div class="row d-flex justify-content-center py-2">
+                <div class="col-12 d-flex  d-md-none col-md-6 justify-content-center">
+                        <div class="input-wrapper">
+                            <input type="search" class="input input-search2" id="find-input2" placeholder="Search...">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
                 </div>
                 <div class="col-12 title d-none d-md-flex col-md-6">
                     <h1 id="search_title_holder"></h1>

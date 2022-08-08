@@ -55,3 +55,141 @@ body{
     
 }
 
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('Segoe UI.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('Segoe UI Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('Segoe UI Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('Segoe UI Bold Italic.woff') format('woff');
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    z-index: 9;
+  }
+  nav {
+    margin: 0 auto;
+    height: 55px;
+    background-color: white;
+}
+
+.burguer-button {
+    border: none;
+}
+.navbar {
+    max-width: 1250px;
+
+}
+.elementos {
+    
+    margin-left: 305px;
+
+}
+.offcanvas {
+    max-width: 250px!important;
+        li {
+            display: block;
+            text-decoration: none;
+            padding: 8px;
+        }
+    a{
+        text-decoration: none;
+        color: #000000;
+        font-family: 'Segoe UI';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;   
+        }
+}
+
+
+.input-wrapper {
+    position: relative;
+    width: 430px;
+    
+}
+
+.input {
+    box-sizing: border-box;
+    color: #dfdfdf;
+    padding: 15px 15px 15px 5px;
+    width: 100%;
+    border-radius: 8px;
+    height: 38px;
+    border: #8f8d8d solid;
+    border-width: thin;
+}
+
+.input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.nav-button {
+    text-align: center;
+}
+.right-nav {
+    gap: 10px;
+}
+.dropdown-item:hover {
+    background-color: rgb(234,236,252)!important;
+
+}
+
+@media only screen and (max-width:425px){
+    .nav-button{
+        display: none;
+    }
+}
+
+
+
+.navbar-brand {
+    & img {
+        width: 48px;
+        height: 38px;
+    }
+}
+.p1_icon{
+    width: 30px;
+    height: 30px;
+}
+.profile {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
