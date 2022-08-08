@@ -7,13 +7,13 @@ let userProfile = document.querySelector('#dropdown-user');
 const insUserProfile = (user) => {
     let templateUser = '';
     templateUser +=`
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu" >
         <li><a class="dropdown-item" href="#">${user[0].userName} ${user[0].userLastname}<br>@${user[0].userNickname}</a></li>
         <li>
             <hr class="dropdown-divider">
         </li>
         <li><a class="dropdown-item" href="#">Dashboard</a></li>
-        <li><a class="dropdown-item" href="#">Create Post</a></li>
+        <li><a class="dropdown-item" href="/createPost.html">Create Post</a></li>
         <li><a class="dropdown-item" href="#">Reading List</a></li>
         <li><a class="dropdown-item" href="#">Settings</a></li>
         <li>

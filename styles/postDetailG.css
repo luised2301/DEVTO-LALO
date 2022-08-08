@@ -1,28 +1,36 @@
+@font-face {
+  font-family: "Segoe UI Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Regular"), url("Segoe UI.woff") format("woff");
+}
+@font-face {
+  font-family: "Segoe UI Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Italic"), url("Segoe UI Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Segoe UI Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Bold"), url("Segoe UI Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Segoe UI Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Bold Italic"), url("Segoe UI Bold Italic.woff") format("woff");
+}
 body {
   background-color: #F5F5F5;
   width: 100vw;
 }
 
-.card-img-top{
-  max-height: 325px;
-  max-width: 200px;
+.card-header {
+  font-family: "Segoe UI Italic";
 }
 
-.card-title{
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.btn-primary{
-  background-color: #190AA4 !important;
-}
-
-.form-comments{
-  margin-left: 50px;
-}
-.card-text{
-  margin-left: 50px;
-  margin-right: 50px;
-}
 .image-title img {
   border-radius: 50%;
 }
