@@ -108,7 +108,12 @@ nav {
   background-color: rgb(234, 236, 252) !important;
 }
 
-@media only screen and (max-width: 325px) {
+@media only screen and (max-width: 300px) {
+  .nav-button {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
   .nav-button {
     display: none;
   }
